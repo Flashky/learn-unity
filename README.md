@@ -12,7 +12,7 @@
 
 ## Anchors
 
-Anchors are useful to make a component stay at a certain position:
+Anchors are useful to make a component stay at a certain position regardless the used aspect ratio:
 
 1. Select your component.
 2. Click on the anchor square, it has a middle and center words in it.
