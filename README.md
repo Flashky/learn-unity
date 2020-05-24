@@ -18,7 +18,7 @@ Anchors are useful to make a component stay at a certain position:
 2. Click on the anchor square, it has a middle and center words in it.
 3. Set the anchor you want to use.
 4. Go to **Game** tag.
-5. Test different aspect ratios to check is displayed ok under different situations.
+5. Test different aspect ratios to check that everything is displayed fine under different situations.
 
 
 ## Tips & Tricks
