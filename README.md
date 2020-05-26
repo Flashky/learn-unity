@@ -20,6 +20,30 @@ Anchors are useful to make a component stay at a certain position regardless the
 4. Go to **Game** tag.
 5. Test different aspect ratios to check that everything is displayed fine under different situations.
 
+## Load a scene from a different scene
+
+Given two scenes, **MenuScene** and **GameScene**, and given a clickable button on MenuScene. If you want to open GameScene when cliking the button, do the following:
+
+1. On MenuScene, right click and **Create Empty** for creating an empty GameObject.
+2. **(Optional)** Rename the GameObject.
+3. Select the created GameObject.
+4. Go to the component **Inspector** and click on **Add Component**.
+5. Select script and name it.
+6. Add the following method to the class:
+
+```C#
+public void LoadNextScene()
+{
+    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    SceneManager.LoadScene(currentSceneIndex + 1);
+}
+```
+
+7. Go to build.
+8. Add and order all the scenes.
+9. Now open the Button component.
+10. Go to On Click section at the inspector.
+11. Drag the GameComponent to the None box and select the function we created from it.
 
 ## Tips & Tricks
 
