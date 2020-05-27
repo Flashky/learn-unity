@@ -45,6 +45,16 @@ public void LoadNextScene()
 10. Go to On Click section at the inspector.
 11. Drag the GameComponent to the None box and select the function we created from it.
 
+## Quit game
+
+Just use the following method:
+
+```C#
+Application.Quit();
+```
+
+Source: https://docs.unity3d.com/ScriptReference/Application.Quit.html
+ 
 ## Tips & Tricks
 
 ### Make your camera to fill the Canvas
