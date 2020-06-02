@@ -8,7 +8,7 @@ For adding physics we need three different things:
 
 - A Rigidbody which allows the sprite to be simulated by forces.
 - A Collider which allows the sprite to collide with other objects.
-- A Physics Material 2D asset which will allow the colliders to apply bounces and friction.
+- A Physics Material 2D asset which will allow the colliders to apply a behaviour (friction and bounciness) on collision.
 
 ## Adding a Rigidbody component
 
@@ -47,4 +47,4 @@ See also: https://docs.unity3d.com/es/2018.4/Manual/Collider2D.html
 See also: https://docs.unity3d.com/es/2018.4/Manual/class-PhysicsMaterial2D.html
 
 
-In summary, an Sprite has a Rigidbody to perform simulations, a Collider to detect collisions with other objects, and a material which determines how the object will bounce after a collision.
+In summary, an Sprite has a Rigidbody to perform simulations, a Collider to detect collisions with other objects, and a material to determine how the object will bounce after a collision.
