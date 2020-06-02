@@ -48,3 +48,29 @@ See also: https://docs.unity3d.com/es/2018.4/Manual/class-PhysicsMaterial2D.html
 
 
 In summary, an Sprite has a Rigidbody to perform simulations, a Collider to detect collisions with other objects, and a material to determine how the object will bounce after a collision.
+
+## Trigger Colliders
+
+Sometimes we want to trigger some action when an object passes a certain point. 
+
+For example, if a ball hits outside of the gaming zome, we want to score a goal. In an FPS game, we could add triggers when the player enters certain zone to spawn an enemy or boss.
+
+In order to do that, we can create special Colliders which doesn't generate collisions, but trigger events:
+
+1. Create an **Empty** Object.
+2. Select the object and go to the **Inspector**.
+3. Click on **Add component** and add a **Box Collider 2D**.
+4. Select the collider component.
+5. Set **Is Trigger** to true.
+6. Click on **Add component** and add a **script**.
+
+Open the script in Visual Studio and do the following:
+
+1. Delete Start and Update methods.
+2. Start typing a method named as **OnTriggerEnter2D**, VS will suggest overriding a method.
+
+The previous method will be automatically executed whenever an object having a Collider on it, enters in the space of the trigger collider.
+
+
+
+
