@@ -13,3 +13,4 @@ Now depending on the type of physics we want to apply, we can configure differen
 
 - **Dynamic**: Physics simulation. Gravity and forces affect the object.
 - **Kinematic**: Physics simulation. Gravity and other forces **does not** affect the object.
+- **Static**: An static object works as if it would have an infinite mass, so it doesn't get affected by anything hitting it.
