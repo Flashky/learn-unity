@@ -4,7 +4,7 @@
 
 1. Create a **2D Object Sprite**.
 
-For adding physics we need two different things:
+For adding physics we need three different things:
 
 - A Rigidbody which allows the sprite to be simulated by forces.
 - A Collider which allows the sprite to collide with other objects.
