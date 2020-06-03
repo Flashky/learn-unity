@@ -72,5 +72,15 @@ Open the script in Visual Studio and do the following:
 The previous method will be automatically executed whenever an object having a Collider on it, enters in the space of the trigger collider.
 
 
+## Global physics
+
+If you want to change the physics to the same for all the rigid bodies on the scene:
+
+1. Click on **Edit...* menu.
+2. Select **Project settings...** option.
+3. Tune the settings as you wish.
+
+For example, to modify the gravity, set the Y component to the value you need.
+The -9.21 value is pretty much the gravity on Earth. 0 means no Gravity at all.
 
 
