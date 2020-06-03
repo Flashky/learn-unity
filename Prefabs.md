@@ -30,3 +30,7 @@ Any game objects created from that prefab will be modified at the same time.
 3. Click **Overrides** and then **Apply all**.
 
 **Note:** If you modify just one of the Game Object instances without applying, then only that instance will be modified and not all the prefab.
+
+## Distinguising prefab values from instance values
+
+Any attribute different from the prefab will have the attribute name in **bold**.
