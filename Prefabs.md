@@ -31,6 +31,8 @@ Any game objects created from that prefab will be modified at the same time.
 
 **Note:** If you modify just one of the Game Object instances without applying, then only that instance will be modified and not all the prefab.
 
-## Distinguising prefab values from instance values
+## Prefab values vs from instance values
 
-Any attribute different from the prefab will have the attribute name in **bold**.
+- Any attribute different from the prefab will have the attribute name in **bold**.
+- Any non-prefab value will not be modified if the prefab is modified.
+
