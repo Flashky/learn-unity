@@ -15,10 +15,18 @@ You can tell which objects are prefabs just looking at their color at the hierar
 
 ## Modify a prefab
 
+**Modify from the prefab**
+
 1. Go to the **Prefabs** folder.
 2. Select the prefab to modify.
 3. Change any of its attributes.
 
 Any game objects created from that prefab will be modified at the same time.
 
-**Note:** If you modify just one of the Game Object instances, then only that instance will be modified and not all the prefab.
+**Modify from the instanced prefab**
+
+1. Select an instanced prefab Game Object.
+2. Modify its attributes.
+3. Click **Overrides** and then **Apply all**.
+
+**Note:** If you modify just one of the Game Object instances without applying, then only that instance will be modified and not all the prefab.
