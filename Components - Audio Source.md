@@ -59,7 +59,7 @@ public class Block : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        AudioSource.PlayClipAtPoint(breakSound, gameObject.transform.position);
+        AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
         Destroy(gameObject);
     }
 }
