@@ -29,7 +29,7 @@ private void OnCollisionEnter2D(Collision2D collision)
 }
  ```
 
-## Play sound with no interruptions
+### Play sound with no interruptions
 
 The previous method stops to play whenever a second play call is done.
 The ``PlayOneShot`` method allows to play the sound in all its length, however, its need an AudioClip as a parameter:
@@ -41,6 +41,32 @@ private void OnCollisionEnter2D(Collision2D collision)
   audioSource.PlayOneShot(audioSource.clip);
 }
 ```
+
+### Play a sound on a certain point
+
+For this case in particular, we can play a sound even with no AudioSource component.
+
+When you use the ``Destroy(...)`` method, any component will be destroyed, including Audio sources, so we won't be able to play any sound.
+
+However, there is a way to play a sound at a certain point using ``AudioSource.PlayClipAtPoint(AudioClip, Vector3)``.
+
+Example:
+
+```C#
+public class Block : MonoBehaviour
+{
+    [SerializeField] AudioClip breakSound;
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        AudioSource.PlayClipAtPoint(breakSound, gameObject.transform.position);
+        Destroy(gameObject);
+    }
+}
+```
+
+In the previous case, an AudioClip field was added to select the clip to be played. Then, on a collision, the sound is played and at the same time, the game object is destroyed.
+
 
 ## Official documentation
 
