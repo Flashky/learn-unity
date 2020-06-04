@@ -1,5 +1,7 @@
 ## Getting a game object from another game object
 
+### Using FindObjectOfType
+
 The ``FindObjectOfType<T>()`` method allows to retrieve a game object.
 
 Example:
@@ -7,6 +9,10 @@ Example:
 ```C#
 Level level = FindObjectOfType<Level>();
 ```
+
+### Using SerializeField
+
+We can assign another game object and just manually drag it to the other game object.
 
 ## Caching game objects
 
