@@ -3,6 +3,7 @@
 A game object is anything that is part of a scene. 
 
 In other words, anything that appears under the hierarchy tree.
+
 Game objects may or not have components of any type: colliders, rigid bodies, scripts, audio sources...
 
 ## Manually instantiating game objects
