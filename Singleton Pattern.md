@@ -25,7 +25,8 @@ public class GameSession : MonoBehaviour
 
     }
 
-    // This is not part of the Singleton pattern, but it will allow us to reset any data stored in this object by calling this method, so a new instance will be created on the next scene loaded.
+    // This is not part of the Singleton pattern.
+    // But it will allow us to reset any data stored in this object in case of need.
     public void ResetGame()
     {
         Destroy(gameObject);
