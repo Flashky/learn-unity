@@ -1,4 +1,28 @@
-## Getting a game object from another game object
+## What is a game object
+
+A game object is anything that is part of a scene. 
+
+In other words, anything that appears under the hierarchy tree.
+Game objects may or not have components of any type: colliders, rigid bodies, scripts, audio sources...
+
+## Manually instantiating game objects
+
+### Through hierarchy
+
+Right click on the hierarchy pane and select the type of object you want to create.
+You can even create empty objects, which are useful for packing other game objects together or for adding just scripts.
+
+### Through assets
+
+You can drag mostly any asset (pngs,prefabs and so on) into either the game scene or the hierarchy tree. 
+When do so, they will be automatically added as game objects.
+
+## Programatically instantiating game objects
+
+
+See also: https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
+
+## Retrieving game objects
 
 The ``FindObjectOfType<T>()`` method allows to retrieve a game object.
 
@@ -37,7 +61,5 @@ public class Block : MonoBehaviour
     }
 }
 ```
-
-## Programatically creating game objects
 
 
