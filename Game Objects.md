@@ -20,6 +20,24 @@ When do so, they will be automatically added as game objects.
 
 ## Programatically instantiating game objects
 
+You may use ``Object.Instantiate(GameObject)`` method (or any of its overloads) to programatically create a game object.
+
+Example:
+
+```C#
+public class Block : MonoBehaviour
+{
+    // Configurable parameters
+    [SerializeField] GameObject blockSparklesVFX;
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Anytime there is a collision, creates a game object which contains a visual effect.
+        GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
+    }
+    
+}
+```
 
 See also: https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
 
