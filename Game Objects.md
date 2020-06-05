@@ -34,6 +34,10 @@ public class Block : MonoBehaviour
     {
         // Anytime there is a collision, creates a game object which contains a visual effect.
         GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
+        
+        // Good practice:
+        // Destroy after x seconds if it is a temporal object to avoid storing too many unused game objects.
+        Destroy(sparkles, 1f);
     }
     
 }
