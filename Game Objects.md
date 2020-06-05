@@ -14,7 +14,7 @@ You can even create empty objects, which are useful for packing other game objec
 
 ### Through assets
 
-You can drag mostly any asset (pngs,prefabs and so on) into either the game scene or the hierarchy tree. 
+You can drag mostly any asset (images, audio files, prefabs...) into either the game scene or the hierarchy tree. 
 When do so, they will be automatically added as game objects.
 
 ## Programatically instantiating game objects
