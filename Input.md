@@ -1,11 +1,11 @@
 
-## KeyDown
+## Input.KeyDown
 
 ```C#
 Input.GetKeyDown(KeyCode);
 ```
 
-## GetAxis
+## Input.GetAxis(string axisName)
 
 In **Edit / Project Settings... / Input Manager** you will have certain predefined input axes.
 For example "Horizontal" axe has a negative button "left", and a positive button "right". Everything is configurable over there.
