@@ -5,12 +5,20 @@
 Input.GetKeyDown(KeyCode);
 ```
 
-## Input.GetAxis(string axisName)
+## Input Manager
 
-In **Edit / Project Settings... / Input Manager** you will have certain predefined input axes.
-For example "Horizontal" axe has a negative button "left", and a positive button "right". Everything is configurable over there.
+In **Edit / Project Settings... / Input Manager** you will have certain predefined input axes and buttons.
 
-To detect a certain Input using the axe configuration, just use the ``Input.getAxis(axisName)`` method.
+For example:
+
+- "Horizontal" axe has a negative button "left", and a positive button "right". Everything is configurable over there.
+- "Fire1" button has a negative button "left", and a positive button "right". Everything is configurable over there.
+
+There are certains functions in the Input API which allows to directly uses these predefined controls.
+
+### Input.GetAxis(string axisName)
+
+ The ``Input.getAxis(axisName)`` method allows as to obtain input from axis such as "Horizontal" or "Vertical".
 
 For example, to use the "Horizontal" axe:
 
@@ -24,3 +32,12 @@ void Update()
 ```
 
 This will update the horizontal position of the object each time we press the left/a, right/d keys.
+
+### Input.GetButtonDown(String buttonName)
+
+The ``Input.getButtonDown(axisName)`` method allows us to obtain input from predefined button configurations such as "Fire1" or "Fire2".
+
+For example, to use the "Fire1" configuration:
+
+
+
