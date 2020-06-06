@@ -70,11 +70,11 @@ For stopping a specific coroutine, use its reference:
 private void Update()
 {
     // At some point, a coroutine was started and we have its reference
-    Coroutine myCoroutineReference = StartCoroutine(MyCoroutine());
+    Coroutine myAliveCoroutineReference = StartCoroutine(MyAliveCoroutine());
     
     // [...]
     
     // Later on, stop the specific coroutine:
-    StopCoroutine(myCoroutineReference); // Immeditally
+    StopCoroutine(myAliveCoroutineReference); // Immeditally
 }
 ```
