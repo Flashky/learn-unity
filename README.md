@@ -5,6 +5,15 @@
 - [Official documentation](https://docs.unity3d.com/2020.2/Documentation/ScriptReference/)
 - [ShareMyGame](https://sharemygame.com/)
 
+## Resources
+
+### Fonts
+
+- [Dafont](https://www.dafont.com/) 
+
+### Sprites and models
+
+- [Kenney](https://kenney.nl/) 
 
 ## Managing user input
 
