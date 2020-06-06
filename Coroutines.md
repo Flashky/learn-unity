@@ -12,6 +12,7 @@ We can create two kind of coroutines:
 ### Single execution routine
 
 A single execution routine will run just once and finish until it is invoked once again. 
+
 Somehow, is pretty similar to just calling any other method, but it will be able to have a wait. 
 This is useful, for example, for playing death animations or similar things.
 
