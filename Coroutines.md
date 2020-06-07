@@ -19,7 +19,7 @@ This is useful, for example, for playing death animations or similar things.
 ```C#
 IEnumerator MyCoroutine() {
   // Insert your code for doing anything.
-  WaitForSeconds(3);
+  yield return new WaitForSeconds(3);
   // Insert your code for doing anything after the wait is over.
 }
 ```
@@ -32,7 +32,7 @@ An alive execution routine will run forever until being told to stop.
 IEnumerator MyAliveCoroutine() {
   while(true) {
     // Insert your code for doing anything.
-    WaitForSeconds(3);
+    yield return new WaitForSeconds(3);
     // Insert your code for doing anything after the wait is over.
   }
 }
@@ -78,3 +78,25 @@ private void Update()
     StopCoroutine(myAliveCoroutineReference); // Immeditally
 }
 ```
+
+## Yield conditions
+
+In the previous examples, the yield condition was ``WaitForSeconds(float seconds)``. 
+However, a coroutine can use other different yield conditions.
+
+### WaitForSeconds(float)
+
+The most basic and easy to use:
+
+```C#
+yield return new WaitForSeconds(2f);
+```
+
+### Wait on another coroutine to finish
+
+This will allow us start coroutines from within coroutines:
+
+```C#
+yield return new StartCoroutine(MyOtherCoroutine());
+```
+
