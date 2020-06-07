@@ -97,6 +97,6 @@ yield return new WaitForSeconds(2f);
 This will allow us start coroutines from within coroutines:
 
 ```C#
-yield return new StartCoroutine(MyOtherCoroutine());
+yield return StartCoroutine(MyOtherCoroutine());
 ```
 
