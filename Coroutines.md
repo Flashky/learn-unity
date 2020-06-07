@@ -40,7 +40,7 @@ IEnumerator MyAliveCoroutine() {
 
 ## Starting a coroutine execution
 
-Use the ```StartCoroutine(<your_coroutine>())`` method for starting the coroutine execution.
+Use the ``StartCoroutine(<your_coroutine>())`` method for starting the coroutine execution.
 
 Example:
 
