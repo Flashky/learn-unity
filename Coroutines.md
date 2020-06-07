@@ -111,3 +111,24 @@ This will allow us start coroutines from within coroutines. The main coroutine w
 yield return StartCoroutine(MyOtherCoroutine());
 ```
 
+## Converting Monobehaviour scripts into coroutines
+
+When creating a Monobehaviour script, by default it will have two methods:
+
+```C#
+void Start() {
+}
+
+void Update() {
+}
+```
+
+You can convert those methods into coroutines just by adding the IEnumerator interface to the return:
+
+```C#
+IEnumerator Start() {
+}
+
+IEnumerator Update() {
+}
+```
