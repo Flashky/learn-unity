@@ -57,25 +57,37 @@ We can retrieve the coroutine reference to stop it later on.
 
 ### Stop all coroutines
 
-``
+```C#
 private void Update()
 {
+    // Two coroutines are started
+    StartCoroutine(MyCoroutine());
+    StartCoroutine(MyAliveCoroutine());
+    
+    // [...]
+    
+    // Later on, stop all the coroutines.
     StopAllCoroutines();
+    
+    // Both MyCoroutine and MyAliveCoroutine will be stopped
 }
-``
+```
 
 ### Stop a specific coroutine
 
 ```C#
 private void Update()
 {
-    // At some point, a coroutine was started and we have its reference
+    // Two coroutines are started, we pick the reference of one of them
+    StartCoroutine(MyCoroutine());
     Coroutine myAliveCoroutineReference = StartCoroutine(MyAliveCoroutine());
     
     // [...]
     
     // Later on, stop the specific coroutine:
-    StopCoroutine(myAliveCoroutineReference); // Immediately
+    StopCoroutine(myAliveCoroutineReference);
+    
+    // Only MyAliveCoroutine will be stopped
 }
 ```
 
