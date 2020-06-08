@@ -101,7 +101,7 @@ If you want to change the physics to the same for all the rigid bodies on the sc
 For example, to modify the gravity, set the Y component to the value you need.
 The -9.21 value is pretty much the gravity on Earth. 0 means no Gravity at all.
 
-## Collision matrix and layers
+## Layer Collision Matrix
 
 Sometimes you might not want that certain colliders trigger collisions on certain objects.
 
