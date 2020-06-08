@@ -101,4 +101,52 @@ If you want to change the physics to the same for all the rigid bodies on the sc
 For example, to modify the gravity, set the Y component to the value you need.
 The -9.21 value is pretty much the gravity on Earth. 0 means no Gravity at all.
 
+## Collision matrix and layers
 
+Sometimes you might not want that certain colliders trigger collisions on certain objects.
+
+Unity provides a way to control this easily using layers and a layers collision matrix.
+
+First, we need to create a few layers:
+
+1. Select any game object.
+2. Go to the **Inspector**.
+3. Go to the **Layer** combobox.
+4. Click on **Add layer**.
+5. Create as many layers on any of the **User Layer** textboxes as you wish. 
+
+Examples of layers:
+
+- Player
+- Enemy
+- Player projectiles
+- Enemy projectiles.
+
+Now, select any game objects with colliders and assign them to the layer you want.
+Finally, let's configure the layer collision matrix:
+
+1. Go to **Edit / Project Settings...**.
+2. Go to **Physics 2D**.
+3. You will find the **Layer Collision Matrix** at the bottom:
+  3.1. By default, everything is checked.
+  3.2. Uncheck any layers you don't want to collide between them. 
+     
+Example:
+
+- Given: a coop shooting game. 
+- When: either friends and foes can pass through between them without blocking.
+- And: there is no friendly fire.
+
+Then, for handling collisions you would create four layers:
+
+- Friend
+- Foe
+- Friendly Fire
+- Foe Fire
+
+And you will assign the following values to the collision matrix:
+
+|        | Friend | Foe | Friendly Fire | Foe Fire |
+|--------|--------|-----|---------------|----------|
+| Friend |        |     |               | x        |
+| Foe    |        |     | x             |          |
