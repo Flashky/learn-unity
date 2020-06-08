@@ -131,11 +131,11 @@ Finally, let's configure the layer collision matrix:
   3.1. By default, everything is checked.
   3.2. Uncheck any layers you don't want to collide between them. 
      
-Example:
+### Example:
 
-- Given: a coop shooting game. 
-- When: either friends and foes can pass through between them without blocking.
-- And: there is no friendly fire.
+- **Given:** a coop shooting game. 
+- **When:** either friends and foes can pass through between them without blocking.
+- **And:** there is no friendly fire.
 
 Then, for handling collisions you would create four layers:
 
