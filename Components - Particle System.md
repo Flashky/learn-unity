@@ -59,7 +59,8 @@ The start speed of the particles in world units.
 
 #### Start color
 
-The start color of the particles. You can use a gradient on this one to setup multiple colors.
+The start color of the particles. 
+Beside the color, you can also play with the alpha channel to give the particles a bit of transparency.
 
 ### Emmision configuration
 
