@@ -82,11 +82,31 @@ This one is very useful, as it allows us to set the shape the particles will spr
 
 These three properties will allow us to change the scale of the emmiting shape and its orientation.
 
+### Texture Sheet Animation
+
+Allows you to use a texture sheet with multiple tiles or subframes to be used as an animation of the particle.
+
+#### Tiles
+
+Allows to define tiles of the sheet.
+
+Example: 
+When using a sheet with 3 horizontal images, you would set it as (x,y) = (3,1).
+
+#### Time mode
+
+Play with this values so you can change how the particles change over the sheet.
+
+#### Start Frame
+
+Allows you customize on which image from the sheet the particle animation will start.
+
 ### Renderer
 
 #### Material 
 
 By default, the particle system uses a material called **Default-ParticleSystem**.
+If your material uses an image sheet, you can set Texture Sheet Animation to cycle through the tiles.
 You can change that in this configuration parameter.
 
 See also: https://github.com/Flashky/learn-unity/blob/master/Assets%20-%20Materials
