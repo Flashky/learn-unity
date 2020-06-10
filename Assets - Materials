@@ -1,0 +1,25 @@
+Materials are useful for many things such as:
+
+1. Giving friction and bounciness to Rigid bodies.
+2. Create scrolling backgrounds.
+3. Create improved particle systems.
+
+## Creating a material
+
+1. Go to **Assets** and create a folder for materials.
+2. Right click on **Assets** view and select **Create / Material**.
+
+## Assign a shader type
+
+The shader type will determine how the material is displayed.
+
+Examples:
+
+- Mobile / Particles / Alpha Blended: This one allow us to use images with alpha tranparency channel, which is useful for particle systems.
+- Unlit / Texture: This one is useful for creating textures.
+
+## Assigning an image to your material
+
+1. Go to **Assets** and select your material.
+2. On the **Inspector**, click on **Albedo**.
+3. Select the image you want to add to the material.
