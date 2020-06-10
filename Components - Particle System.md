@@ -82,8 +82,11 @@ This one is very useful, as it allows us to set the shape the particles will spr
 
 These three properties will allow us to change the scale of the emmiting shape and its orientation.
 
+### Renderer
 
-## Adding materials to particle systems
+#### Material 
 
-TODO
+By default, the particle system uses a material called **Default-ParticleSystem**.
+You can change that in this configuration parameter.
 
+See also: https://github.com/Flashky/learn-unity/blob/master/Assets%20-%20Materials
