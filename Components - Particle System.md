@@ -83,3 +83,7 @@ This one is very useful, as it allows us to set the shape the particles will spr
 These three properties will allow us to change the scale of the emmiting shape and its orientation.
 
 
+## Adding materials to particle systems
+
+TODO
+
