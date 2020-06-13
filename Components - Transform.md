@@ -68,7 +68,7 @@ public class Spinner : MonoBehaviour
 
     private void Start()
     {
-        angularRotation = new Vector3(0, 0, rotationSpeed);
+        angularRotation = new Vector3(0, 0, rotationSpeed * Time.deltaTime);
     }
 
     // Update is called once per frame
@@ -90,7 +90,7 @@ public class Spinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0,0, rotationSpeed);
+        transform.Rotate(0,0, rotationSpeed * Time.deltaTime);
     }
 }
 ```
