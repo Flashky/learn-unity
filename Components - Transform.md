@@ -56,7 +56,11 @@ As its name suggests, it controls the rotation of the object.
 
 The ``Transform`` class has a ``Rotate`` method that allows us to rotate the game object by the amount specified by a Vector3.
 
-Example:
+This method has multiple ovrrides
+
+#### Transform.Rotate(Vector3)
+
+This one rotates using a Vector3.
 
 ```C#
 public class Spinner : MonoBehaviour
@@ -79,7 +83,9 @@ public class Spinner : MonoBehaviour
 }
 ```
 
-There is another overriden method for doing this by degrees:
+#### Transform.Rotate(float xAngle, float yAngle, float zAngle)
+
+This one rotates using degrees. 
 
 ```C#
 public class Spinner : MonoBehaviour
