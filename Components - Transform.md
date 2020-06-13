@@ -58,7 +58,7 @@ The ``Transform`` class has a ``Rotate`` method that allows us to rotate the gam
 
 This method has multiple ovrrides
 
-#### Transform.Rotate(Vector3)
+#### Transform.Rotate(Vector3 eulers)
 
 This one rotates using a Vector3.
 
