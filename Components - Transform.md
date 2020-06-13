@@ -78,3 +78,20 @@ public class Spinner : MonoBehaviour
     }
 }
 ```
+
+There is another overriden method for doing this by degrees:
+
+```C#
+public class Spinner : MonoBehaviour
+{
+
+    [SerializeField] float rotationSpeed = 360f;
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Rotate(0,0, rotationSpeed);
+    }
+}
+```
+
