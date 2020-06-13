@@ -58,6 +58,7 @@ The ``Transform`` class has a ``Rotate`` method that allows us to rotate the gam
 
 Example:
 
+```C#
 public class Spinner : MonoBehaviour
 {
 
@@ -76,4 +77,4 @@ public class Spinner : MonoBehaviour
         transform.Rotate(angularRotation);
     }
 }
-
+```
