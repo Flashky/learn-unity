@@ -30,7 +30,7 @@ We will need a game object with two components:
 - [Sprite Renderer](https://github.com/Flashky/learn-unity/blob/master/Components%20-%20Sprite%20Renderer.md)
 - [Animator](https://github.com/Flashky/learn-unity/blob/master/Components%20-%20Animator.md)
 
-We will need also three assets:
+We will also need three assets:
 
 - The previously sliced sprite.
 - An animation created from the previous sliced sprite
