@@ -22,3 +22,12 @@ A few rectangles will apear on each sprite sheet image.
 4. Click on **Apply**.
 
 After doing this, if you click on your image spreat sheet, you will see there are multiple subimages.
+
+### Creating the game object
+
+We will need a game object with two components:
+
+- Sprite Renderer
+- Animator
+
+
