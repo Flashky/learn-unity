@@ -27,7 +27,7 @@ After doing this, if you click on your image spreat sheet, you will see there ar
 
 We will need a game object with two components:
 
-- Sprite Renderer
+- [Sprite Renderer](https://github.com/Flashky/learn-unity/blob/master/Components%20-%20Sprite%20Renderer.md)
 - [Animator](https://github.com/Flashky/learn-unity/blob/master/Components%20-%20Animator.md)
 
 
