@@ -32,9 +32,8 @@ Sprite asset -> Animation asset -> Animator Controller asset -> Game Object with
 1. Copy your image sprite sheet to the **Sprites** folder.
 2. Click on the image.
 3. Set **Sprite mode** to **Multiple**.
-4. Set **Mesh type** to **Tight**.
-5. Click on **Apply**.
-6. Click on **Sprite Editor**.
+4. Click on **Apply**.
+5. Click on **Sprite Editor**.
 
 On this new window:
 
