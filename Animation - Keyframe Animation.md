@@ -51,7 +51,7 @@ As the game object already contains two sub-images, this way is the faster for c
 
 Both the Animation and the Animator Controller will be automatically created.
 
-## Performing the animation
+## Recording the animation
 
 Select the **Game Object** and go to the **Animation** pane.
 
@@ -64,5 +64,7 @@ You will see a timeline at the right, there it is where you will create the keyf
 5. Repeat 2-4 multiple times until you finish. 
 
 This way, you will have a manually created animation in the Unity editor.
+
+You can also change the view to **Curves**, which will allow you to tune the animation in a much more visual way.
 
 
