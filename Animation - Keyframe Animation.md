@@ -57,11 +57,12 @@ Select the **Game Object** and go to the **Animation** pane.
 
 You will see a timeline at the right, there it is where you will create the keyframe animation:
 
-1. Click on the **Record** button.
-2. Click on the left side of the timeline, you will be able to **slide a vertical bar**.
-3. Move the bar to a desired point in the timeline.
-4. Now move the sprite in the scene to a position.
-5. Repeat 2-4 multiple times until you finish. 
+1. Select the part you want to animate.
+2. Click on the **Record** button.
+3. Click on the left side of the timeline, you will be able to **slide a vertical bar**.
+4. Move the bar to a desired point in the timeline.
+5. Now move the sprite in the scene to a position.
+6. Repeat 2-4 multiple times until you finish. 
 
 This way, you will have a manually created animation in the Unity editor.
 
