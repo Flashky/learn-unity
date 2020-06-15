@@ -11,7 +11,7 @@ Go to **Window / Animation** in order to add those two windows to the Unity IDE.
 
 ## Animating using keyframe animation
 
-You just need a couple of things for doing keyframe animation:
+You just need a the following things for doing keyframe animation:
 
 1. A manually sliced **Sprite** asset (it doesn't have to be a sprite sheet).
 2. A **Game Object** containing sub-objects each of them with each part of the sliced sprite.
@@ -34,7 +34,7 @@ On this new window:
 A few rectangles will apear on each sprite sheet image.
 4. Click on **Apply**.
 
-## 2. Creating the Game Object
+### 2. Creating the Game Object
 
 1. Create an empty **Game Object**.
 2. Add an additional **Animator** component.
@@ -50,3 +50,19 @@ As the game object already contains two sub-images, this way is the faster for c
 4. Give a name to the animation.
 
 Both the Animation and the Animator Controller will be automatically created.
+
+## Performing the animation
+
+Select the **Game Object** and go to the **Animation** pane.
+
+You will see a timeline at the right, there it is where you will create the keyframe animation:
+
+1. Click on the **Record** button.
+2. Click on the left side of the timeline, you will be able to **slide a vertical bar**.
+3. Move the bar to a desired point in the timeline.
+4. Now move the sprite in the scene to a position.
+5. Repeat 2-4 multiple times until you finish. 
+
+This way, you will have a manually created animation in the Unity editor.
+
+
