@@ -82,7 +82,10 @@ An **Animator Controller** can hold multiple animations, and is responsible of t
 2. Right click and select **Create / Animator Controller**.
 3. Finally, drag your previously created **Animation** asset into the flow diagram.
 
-**Remember:** *You can have multiple animations in your animator controller. It is a good idea togive a generic name to it, for example, Car or CarController, and then the animations might be named after CarTurning, CarBraking, etc...
+**Remember:** *You can have multiple animations in your animator controller. It is a good idea togive a generic name to it, for example, Car or CarController, and then the animations might be named after CarTurning, CarBraking, etc...*
+
+You can put two animations in the animation flow so one animation starts after the previous one finishes.
+
 
 ## 5. Adding the Animator Controller to the Game Object
 
