@@ -39,12 +39,14 @@ Sprite asset -> Animation asset -> Animator Controller asset -> Game Object with
 On this new window:
 
 1. Go to **Slice** 
-2. Verify that **Type** is set to **Automatic**.
+2. Verify that **Type** is set to **Automatic**. 
+If your sprite sheet sub-images contains multiple images, then it is better to use sprite sheet by grid size.
 3. Click on **Slice**.
 A few rectangles will apear on each sprite sheet image.
 4. Click on **Apply**.
 
 After doing this, if you click on your image spreat sheet, you will see there are multiple subimages.
+
 
 ### 2. Creating the Sprite Game Object 
 
