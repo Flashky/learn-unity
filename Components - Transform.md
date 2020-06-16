@@ -28,6 +28,24 @@ Just create a new vector with the new coordinates:
 transform.position = new Vector3(0, 25, 10);
 ```
 
+You can add vectors directly, for example, if you want to move a little to the left on each Update:
+
+```C#
+transform.position += new Vector2(-1, 0);
+```
+
+:bulb: **Did you know...?**
+
+...there are some predefined vectors to move to certain fixed positions such as left, right, top and bottom.
+
+They are just shorthands for (-1,0), (1,0), (0,1), 0,-1).
+
+The previous example can be then rewritten to this:
+
+```c#
+transform.position += Vector2.left;
+```
+
 ### Moving an object using Tranform.Translate
 
 This one is initially pretty similar to the previous one:
@@ -41,15 +59,6 @@ So, what is the difference?
 The default method with just the vector is not different to using transform.position. However Translate has other overriden methods that allows to move objects relative to a space or local position.
 
 
-:bulb: **Did you know...?**
-
-...there are some predefined vectors to move to certain fixed positions such as left, right, top and bottom.
-
-They are just shorthands for (-1,0), (1,0), (0,1), 0,-1) and can be accessed like this:
-
-```c#
-transform.Translate(Vector2.left);
-```
 
 ### Moving an object using Vector2.MoveTowards
 
