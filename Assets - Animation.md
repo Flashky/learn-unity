@@ -1,7 +1,7 @@
 The **Animation** asset contains information about a certain animation.
 
 
-## Adding animation event
+## Adding an animation event
 
 Animation events are points at the animation which trigger any C# function you set.
 
@@ -14,6 +14,8 @@ To add an animation event:
 Now the **Inspector** will open:
 
 1. Set function name at the **Function** field.
-2. Set the float / int / string parameter you wish.
+2. Set the float/int/string/object parameter you want.
 
-Finally, you must go to the script, and add that same function
+Finally, you must go to the related C# script (the one that is at the same game object as the sprite renderer), and implement the function.
+
+You can have multiple animation events.
