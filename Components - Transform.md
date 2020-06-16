@@ -41,16 +41,15 @@ So, what is the difference?
 The default method with just the vector is not different to using transform.position. However Translate has other overriden methods that allows to move objects relative to a space or local position.
 
 
-**Did you know...?**
+:bulb: **Did you know...?**
 
 ...there are some predefined vectors to move to certain fixed positions such as left, right, top and bottom.
-They are just shorthands for (-1,0),(1,0),(0,1),0,-1) and so on.
 
-They can be accessed like this:
+They are just shorthands for (-1,0), (1,0), (0,1), 0,-1) and can be accessed like this:
 
-``c#
+```c#
 transform.Translate(Vector2.left);
-``
+```
 
 ### Moving an object using Vector2.MoveTowards
 
