@@ -40,4 +40,13 @@ The ``Input.getButtonDown(axisName)`` method allows us to obtain input from pred
 For example, to use the "Fire1" configuration:
 
 
+### Input.mousePosition
+
+The ``Input.mousePosition`` property returns you the position of the mouse at the very moment you call the method.
+
+This property has two coordinates:
+
+- Input.mousePosition.x
+- Input.mousePosition.y
+
 
