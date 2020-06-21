@@ -86,9 +86,27 @@ Open the script in Visual Studio and do the following:
 
 The previous method will be automatically executed whenever an object having a Collider on it, enters in the space of the trigger collider.
 
+## Other events
 
+### Events on mouse click
 
+Colliders also allow us to detect clicks on certain zones.
 
+1. Create an **Empty** object.
+2. Select the object and go to the **Inspector**.
+3. Click on **Add component** and add a **Box Collider 2D**.
+4. Click on **Add component** and add a **script**.
+
+After that, you can add a ``OnMouseDown`` event this way:
+
+```C#
+private void OnMouseDown()
+{
+    Debug.Log("Clicked on Game area!");
+}
+```
+
+Any time you click in the collider, the previous event will be triggered.
 
 ## Global physics
 
